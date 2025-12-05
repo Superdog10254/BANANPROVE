@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Test deg selv</title>
+    <link rel="stylesheet" href="Hub_style.css">
+    <link rel="icon" href="Img/IM.png" type="image/png">
+</head>
+<body>
+<h1>Test deg selv</h1>
+    <ul class="navigation">
+        <li><a href="index.html">IT-Hub</a></li>
+        <li><a href="Brukerstøtte.html">Brukerveiledning</a></li>
+        <li><a href="Fakta.html">Fakta</a></li>
+    </ul>
+
+    <div class="intro-box">
+        <h2>Quiz: IP-adresser og IT-drift</h2>
+        <p>Test kunnskapen din! Svar på spørsmålene nedenfor og få poeng for riktige svar.</p>
+        <p id="score-display"><strong>Poeng: 0/90</strong></p>
+    </div>
+
+    <div id="quiz-container"></div>
+
+    <div id="results" class="quiz-results">
+        <h2 id="results-title"></h2>
+        <p id="results-details"></p>
+        <button type="button" id="try-again" class="quiz-submit-btn">Prøv igjen</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>

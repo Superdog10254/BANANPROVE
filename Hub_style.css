@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00c9a7;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+a {
+    text-decoration: none;
+    color: #00c9a7;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #00c9a7;
+    transform: scale(1.1);
+}
+
+/* Navigation menu */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 12px 20px;
+    background: #111;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #00c9a7;
+    transition: 0.3s;
+}
+
+.navigation li a:hover {
+    background: #00c9a7;
+    color: #111;
+    transform: scale(1.05);
+}
+
+.navigationlist a {
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navigationlist a:hover {
+    background-color: #00c9a7;
+    color: #111;
+    border-radius: 8px;
+}
+
+/* Extra styling for content */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 201, 167, 0.6);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.card {
+    background: #2a2a40;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid #00c9a7;
+    box-shadow: 0 0 15px rgba(0, 201, 167, 0.25);
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.card img:hover {
+    transform: scale(1.35); /* zoom når du holder musepekeren over */
+}
+
+.card1 {
+    text-align: center; /* sentrerer innholdet i kortet */
+    margin: 10%;
+    background: #2a2a40;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid #00c9a7;
+    box-shadow: 0 0 15px rgba(0, 201, 167, 0.25);
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+.card1 img :hover{
+    transform: scale(1.35);
+}
+
+.navigation5 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation5 li a {
+    display: block;
+    padding: 12px 20px;
+    background: #111;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #00c9a7;
+    transition: 0.3s;
+}
+
+.card, .card1 {
+    margin-bottom: 100px; /* eller større hvis du vil ha mer luft */
+}
+
+.intro-box {
+    background:#2a2a40;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #00c9a7;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.intro-box h2 {
+    color: #00c9a7;
+    margin-top: 0px;
+}
+
+.infocard {
+    margin: 8%;
+    text-align: center; /* sentrerer innholdet i kortet */
+}
+
+.infocard h3{
+    color: #00c9a7;
+}
+
+.content-box {
+    background: #2a2a40;
+    margin: 5%;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #00c9a7;
+    border-radius: 10px;
+    border-color: #00c9a7;
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.3s ease;
+}
+
+.content-box:hover {
+    box-shadow: 0 0 30px rgba(0, 201, 167, 0.6);
+    transform: translateY(-5px);
+}
+
+.card-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Fact page image and source list */
+.fact-image {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.source-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 10px auto 40px auto;
+}
+
+.info-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #2a2a40;
+    color: #f0f0f0;
+}
+
+.info-table tr {
+    border: 1px solid #00c9a7;
+}
+
+.info-table th, .info-table td {
+    padding: 10px;
+    border: 1px solid #00c9a7;
+}
+
+/* Quiz small helpers */
+.quiz-button {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.quiz-submit-btn {
+    padding: 10px 22px;
+    background: #00c9a7;
+    color: #111;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz-results {
+    display: none;
+    margin: 30px auto;
+    max-width: 700px;
+    background: #2a2a40;
+    padding: 18px;
+    border-radius: 10px;
+    border: 2px solid #00c9a7;
+    text-align: center;
+}
+
+.quiz-item {
+    margin-bottom: 14px;
+}
+
+.quiz-option {
+    display: block;
+    margin: 6px 0;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakta</title>
+    <link rel="stylesheet" href="Hub_style.css">
+    <link rel="icon" href="Img/IM.png" type="image/png">
+</head>
+<body>
+    <h1>Faktadel: IP-adresser og Subnettmasker</h1>
+    <ul class="navigation">
+        <li><a href="index.html">IT-Hub</a></li>
+        <li><a href="Brukerstøtte.html">Brukerveiledning</a></li>
+        <li><a href="Quiz.html">Test deg selv</a></li>
+    </ul>
+
+    <div class="intro-box">
+        <h2>Hva er IP-adresser?</h2>
+        <p>En IP-adresse er et nummer som sier hvem en enhet er på et nettverk. Tenk på det som et husnummer for datamaskiner. Adresser gjør at data finner fram dit det skal.</p>
+    </div>
+
+    <img src="Img/image (3).jpg" alt="Nettverk" class="fact-image">
+
+    <!-- Enkle sammendrag (NDLA) -->
+    <div class="card">
+        <h3>IP-adresser</h3>
+        <p>IP-adresser lar datamaskiner finne hverandre. En adresse sier hvor en enhet er i et nettverk. Noen adresser er private (brukes i hjemmet, skolen og bedrifter), andre er offentlige (brukes på internett).</p>
+        <p><a href="https://ndla.no/nb/r/driftsstotte-im-itk-vg2/ip-adresser/3082395965" target="_blank">Les mer på NDLA om IP-adresser</a></p>
+    </div>
+
+    <div class="card">
+        <h3>Hva er IPv4?</h3>
+        <p>IPv4 er en type IP-adresse. Den har fire tall (for eksempel 192.168.1.1). Hvert tall er mellom 0 og 255. Fordi det finnes få IPv4-adresser, bruker mange nettverk private adresser og en teknikk som heter NAT.</p>
+        <p><a href="https://ndla.no/nb/r/driftsstotte-im-itk-vg2/ipv4/987eefec02" target="_blank">Les mer på NDLA om IPv4</a></p>
+    </div>
+
+    <div class="card">
+        <h3>Hvordan ser en IPv4-adresse ut?</h3>
+        <p>En IPv4-adresse har fire tall delt med punktum, for eksempel <strong>192.168.1.1</strong>. Hvert tall kalles en oktett og er mellom 0 og 255.</p>
+        <ul class="card-list">
+            <li><strong>Del 1:</strong> Ofte nettverket</li>
+            <li><strong>Del 2:</strong> Ofte nettverket</li>
+            <li><strong>Del 3:</strong> Ofte subnett</li>
+            <li><strong>Del 4:</strong> Enheten (maskinen)</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Subnettmasker</h3>
+        <p>Subnettmasken viser hvilken del av IP-adressen som er nettverk og hvilken som er maskin. For eksempel betyr <strong>255.255.255.0</strong> at de tre første tallene er nettverket, og det siste tallet er maskinen.</p>
+        <ul class="card-list">
+            <li><strong>255</strong> betyr "denne delen tilhører nettverket"</li>
+            <li><strong>0</strong> betyr "denne delen tilhører maskinen"</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>IP-adresseklasser</h3>
+        <table class="info-table">
+            <tr>
+                <th>Klasse</th>
+                <th>Område</th>
+                <th>Standard maske</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>1.0.0.0 - 126.255.255.255</td>
+                <td>255.0.0.0</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>128.0.0.0 - 191.255.255.255</td>
+                <td>255.255.0.0</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>192.0.0.0 - 223.255.255.255</td>
+                <td>255.255.255.0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Private IP-adresser</h3>
+        <p>Private IP-adresser brukes på interne nettverk og rutes ikke på Internett. Her er de reserverte områdene:</p>
+        <ul class="card-list">
+            <li><strong>Klasse A:</strong> 10.0.0.0 - 10.255.255.255</li>
+            <li><strong>Klasse B:</strong> 172.16.0.0 - 172.31.255.255</li>
+            <li><strong>Klasse C:</strong> 192.168.0.0 - 192.168.255.255</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Nyttige ressurser</h3>
+        <ul class="card-list">
+            <li><a href="https://en.wikipedia.org/wiki/Reserved_IP_addresses#Reserved_IPv4_addresses" target="_blank">Wikipedia - Reserved IP addresses</a></li>
+            <li><a href="https://www.calculator.net/ip-subnet-calculator.html" target="_blank">IP Subnet Calculator</a></li>
+            <li><a href="https://ndla.no/nb/e/driftsstotte-im-itk-vg2/nettverkstjenester-og-protokoller/d4b104e3ab" target="_blank">NDLA IP-adresser</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
